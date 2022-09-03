@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Honest News Hub</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container mx-auto">
+            <div class=" navbar bg-base-300">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <ul class="menu menu-horizontal p-0">
+                        <li><a id="news-link">News</a></li>
+
+                        <li><a id="blog-link">Blog</a></li>
+                    </ul>
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="https://placeimg.com/80/80/people" />
+                            </div>
+                        </label>
+                        <ul tabindex="0"
+                            class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="w-9/12 mx-auto pt-10 text-white">
+            <div>
+                <h2 class="text-xl font-medium text-orange-500">what is deference var ,let ,const?</h2>
+                <p><span class="font-semibold text-indigo-600">Var:</span><br> Before the advent of ES6, var
+                    declarations
+                    ruled. There are issues associated with
+                    variables declared with var, though.
+                    That is why it was necessary for new ways to declare variables to emerge. First, let's get to
+                    understand var more before
+                    we discuss those issues.</p><br>
+                <p> <span class="font-semibold text-indigo-600">Scope of var :</span><br>
+                    Scope essentially means where these variables are available for use. var declarations are globally
+                    scoped or
+                    function/locally scoped.
+
+                    The scope is global when a var variable is declared outside a function. This means that any variable
+                    that is declared
+                    with var outside a function block is available for use in the whole window.
+
+                    var is function scoped when it is declared within a function. This means that it is available and
+                    can be accessed only
+                    within that function..</p><br>
+                <p> <span class="font-semibold text-indigo-600">Let</span><br> Let
+                    let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var
+                    declarations. It
+                    also solves the problem with var that we just covered. Let's consider why this is so.
+                    <br>
+                    <span class="font-semibold text-indigo-600">let is block scoped</span><br>
+                    let is block scoped
+                    A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly
+                    braces is a block.
+
+                    So a variable declared in a block with let is only available for use within that block. Let me
+                    explain this with an
+                    example:
+                </p><br>
+                <p><span class="font-semibold text-indigo-600">Const:</span><br>
+                    Variables declared with the const maintain constant values. const declarations share some
+                    similarities with let
+                    declarations.
+                    <br>
+                    <span class="font-semibold text-indigo-600">const declarations are block scoped</span><br>
+                    Like let declarations, const declarations can only be accessed within the block they were declared.
+                    <br>
+                    <span class="font-semibold text-indigo-600">const cannot be updated or re-declared</span> <br>
+                    This means that the value of a variable declared with const remains the same within its scope. It
+                    cannot be updated or
+                    re-declared. So if we declare a variable with const, we can neither do this:
+                </p>
+
+            </div>
+        </section>
+        <section>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div
+                    class="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+                    <h2 class="accordion-header mb-0" id="flush-headingOne">
+                        <button class="accordion-button
+            relative
+            flex
+            items-center
+            w-full
+            py-4
+            px-5
+            text-base text-gray-800 text-left
+            bg-white
+            border-0
+            rounded-none
+            transition
+            focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse border-0 collapse show"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended
+                            to
+                            demonstrate
+                            the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
+                    <h2 class="accordion-header mb-0" id="flush-headingTwo">
+                        <button class="accordion-button
+            collapsed
+            relative
+            flex
+            items-center
+            w-full
+            py-4
+            px-5
+            text-base text-gray-800 text-left
+            bg-white
+            border-0
+            rounded-none
+            transition
+            focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended
+                            to
+                            demonstrate
+                            the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                            imagine this
+                            being
+                            filled with some actual content.</div>
+                    </div>
+                </div>
+                <div
+                    class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
+                    <h2 class="accordion-header mb-0" id="flush-headingThree">
+                        <button class="accordion-button
+            collapsed
+            relative
+            flex
+            items-center
+            w-full
+            py-4
+            px-5
+            text-base text-gray-800 text-left
+            bg-white
+            border-0
+            rounded-none
+            transition
+            focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                            aria-expanded="false" aria-controls="flush-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended
+                            to
+                            demonstrate
+                            the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                            more exciting
+                            happening here in terms of content, but just filling up the space to make it look, at least
+                            at first
+                            glance,
+                            a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
